@@ -1,3 +1,5 @@
+CREATE database stu;
+USE stu;
 CREATE TABLE Student (
     StudentID INT PRIMARY KEY,
     StudentName VARCHAR(20) NOT NULL UNIQUE,
@@ -5,4 +7,7 @@ CREATE TABLE Student (
     Gender VARCHAR(10) NOT NULL,
     DepartmentID INT NOT NULL
 );
-
+desc Student;
+insert Student values("1011","abi","2008-04-28","female","101");
+desc Student;
+select*from Student;
